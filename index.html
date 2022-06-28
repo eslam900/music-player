@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="style/Awesome.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <div class="music-container">
+        <audio src=""></audio>
+        <header>
+            <i id="hidden-btn" class="fa-solid fa-chevron-left"></i>
+            <i id="menu-btn" class="fa-solid fa-ellipsis"></i>
+        </header>
+        <main>
+            <div class="music-info">
+                <img src="image/106-1068121_transparent-music-icon-png-icon-music-png-png.png" alt="music icon">
+                <h1>music name</h1>
+            </div>
+            <div class="music-time">
+                <input id="time" type="range"></input>
+                <div class="timer">
+                    <span id="timeNow">00:00</span>
+                    <span id="totalTime">00:00</span>
+                </div>
+            </div>
+            <div class="control-btn">
+                <div class="volume-music">
+                    <input id="volume" type="range" min="0" max="1" step="0.05"></input>
+                </div>
+                <div class="media-btn">
+                    <i id="volume-icon" class="fa-solid fa-volume-high"></i>
+                    <i id="prevend"  class="fa-solid fa-backward-step"></i>
+                    <i id="play" class="fa-solid fa-circle-play play"></i>
+                    <i id="next" class="fa-solid fa-forward-step"></i>
+                    <i id="mute" class="fa-solid fa-volume-xmark"></i>
+                </div>
+            </div>
+        </main>
+        <div class="music-menu"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
