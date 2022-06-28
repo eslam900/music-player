@@ -152,7 +152,7 @@ menuBtn.addEventListener("click", () => {
       // create click on li
       li.addEventListener("click", () => {
         count = idx;
-        btnPlay.classList = "fa-regular fa-music";
+        btnPlay.classList = "fa-solid fa-circle-pause";
         musicIcon.classList.add("activ");
         setMusic();
         audio.play();
